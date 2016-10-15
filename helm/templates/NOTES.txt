@@ -1,0 +1,46 @@
+==============================
+Kubernetes Certificate Manager
+==============================
+
+The certificate manager has been deployed! You can now create a 
+certificate resource, and the Kubernetes Certificate Manager
+will create an appropriate secret. A certificate resource 
+looks like the following:
+
+  ---
+  apiVersion: "stable.k8s.psg.io/v1"
+  kind: "Certificate"
+  metadata:
+    name: "psg-dot-io"
+  spec:
+    domain: "psg.io"
+    email: "admin@psg.io"
+    provider: "googlecloud"
+    secretName: cert-psg.io
+
+You can also manage certificates using Kubernetes ingress
+resources as follows:
+
+  ---
+  apiVersion: extensions/v1beta1
+  kind: Ingress
+  metadata:
+    name: ingress
+    annotations:
+      stable.k8s.psg.io/kcm.enabled: "true"
+      stable.k8s.psg.io/kcm.provider: "googlecloud"
+      stable.k8s.psg.io/kcm.email: "admin@psg.io"
+  spec:
+    tls:
+    - hosts:
+      - psg.io
+      secretName: cert-psg.io
+    rules:
+    - host: "psg.io"
+      http:
+        paths:
+        - path: /hello-world
+          backend:
+            serviceName: helloworld
+
+For more information, see the README.

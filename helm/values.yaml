@@ -1,0 +1,3 @@
+---
+acmeUrl: "https://acme-staging.api.letsencrypt.org/directory"
+kubectlVersion: "1.4.0"

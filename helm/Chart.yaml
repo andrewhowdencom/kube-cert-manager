@@ -1,0 +1,14 @@
+---
+name: "kube-cert-manager"
+version: "0.3.1"
+description: "Manage Kubernetes TLS secrets backed by Let's Encrypt issued certificates."
+keywords:
+  - "LetsEncrypt"
+home: "https://github.com/PalmStoneGames/kube-cert-manager"
+sources:
+  - "https://github.com/PalmStoneGames/kube-cert-manager"
+maintainers: 
+  - name: "Andrew Howden"
+    email: "hello[at]andrewhowden.com"
+engine: gotpl 
+icon: "https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.png"
