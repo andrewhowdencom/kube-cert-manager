@@ -12,5 +12,8 @@ spec:
   ports:
     - protocol: TCP
       name: http
-      port: 80
+      port: 8080
+    - protocol: TCP
+      name: https
+      port: 8081
   type: ClusterIP

@@ -29,3 +29,10 @@ spec:
           gcePersistentDisk:
             pdName: kube-cert-manager
             fsType: ext4
+      ports:
+        - name: http
+          containerPort: 8080
+          protocol: TCP
+        - name: https
+          containerPort: 8081
+          protocol: TCP
