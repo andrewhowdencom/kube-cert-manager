@@ -31,8 +31,8 @@ spec:
             fsType: ext4
       ports:
         - name: http
-          containerPort: 8080
+          containerPort: 80
           protocol: TCP
-        - name: https
+        - name: https # Todo: Test if this works.
           containerPort: 8081
           protocol: TCP
