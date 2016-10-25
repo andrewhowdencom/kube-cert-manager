@@ -9,3 +9,57 @@ kubectlVersion: "1.4.0"
 
 ## Change the namespace the certificate manager is deployed to
 deploymentNamespace: "default"
+
+# CLOUDFLARE
+cloudflareEmail: ""
+cloudflareApiKey: ""
+#
+# DIGITAL OCEAN
+doAuthToken: ""
+#
+# DNSIMPlE
+dnsimpleEmail: ""
+dnsimpleApiKey: ""
+#
+# DNS MADE EASY
+dnsmadeeasyApiKey: ""
+dnsmadeeasyApiSecret: ""
+dnsmadeeasySandbox: ""
+#
+# DYN
+dynCustomerName: ""
+dynUserName: ""
+dynPassword: ""
+#
+# GANDI
+gandiApiKey: ""
+#
+# GOOGLE CLOUD
+gceProject: ""
+googleApplicationCredentials: ""
+#
+# NAMECHEAP
+namecheapApiUser: ""
+namecheapApiKey: ""
+#
+# OVH
+ovhEndpoint: ""
+ovhApplicationKey: ""
+ovhApplicationSecret: ""
+ovhConsumerKey: ""
+#
+# PDNS
+pdnsApiKey: ""
+#
+# RFC2136
+rfc2136Nameserver: ""
+rfc2136TsigAlgorithm: ""
+rfc2136TsigKey: ""
+rfc2136TsigSecret: ""
+#
+# AMAZON ROUTE 53
+awsAccessKey: ""
+awsSecretAccessKey: ""
+#
+# VULTR
+vultrApiKey: ""
