@@ -45,40 +45,81 @@ dnsmadeeasyApiSecret: ""
 ## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 dnsmadeeasySandbox: ""
 
-## DYN:
+## DYN: The customer name of the Dyn user
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 dynCustomerName: ""
+
+## DYN: The user name of the Dyn user
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 dynUserName: ""
+
+## DYN: The password of the Dyn user
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 dynPassword: ""
-#
-# GANDI
+
+## GANDI: The API key for Gandi
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 gandiApiKey: ""
-#
-# GOOGLE CLOUD
+
+## GOOGLE CLOUD: The name of the Google Cloud project to use
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 gceProject: ""
+
+## GOOGLE CLOUD: A path to the credentials file to use. The credentials file itself should be mounted from a seperate secret to a file.
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 googleApplicationCredentials: ""
-#
-# NAMECHEAP
+
+## NAMECHEAP: The username of the namecheap user
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 namecheapApiUser: ""
+
+## NAMECHEAP: The API key corresponding with the namecheap user
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 namecheapApiKey: ""
-#
-# OVH
+
+## OVH: The URL of the API endpoint to use
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 ovhEndpoint: ""
+
+## OVH: The application key
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 ovhApplicationKey: ""
+
+## OVH: The secret key that corresponds with the application key
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 ovhApplicationSecret: ""
+
+## OVH: The consumer key
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 ovhConsumerKey: ""
-#
-# PDNS
+
+## PDNS: The API key to use
 pdnsApiKey: ""
-#
-# RFC2136
+
+## RFC2136: The network address of the provider, in the form of "host" or "host:port"
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 rfc2136Nameserver: ""
+
+## RFC2136: The algorithm to use for TSIG authentication.
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 rfc2136TsigAlgorithm: ""
+
+## RFC2136: The key to use for TSIG authentication.
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 rfc2136TsigKey: ""
+
+## RFC2136: The secret to use for TSIG authentication.
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 rfc2136TsigSecret: ""
-#
-# AMAZON ROUTE 53
+
+## AMAZON ROUTE 53: The access key ID
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 awsAccessKey: ""
+
+## AMAZON ROUTE 53: The secret corresponding to the access key
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 awsSecretAccessKey: ""
-#
-# VULTR
+
+## VULTR: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 vultrApiKey: ""
