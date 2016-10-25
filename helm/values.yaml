@@ -10,23 +10,42 @@ kubectlVersion: "1.4.0"
 ## Change the namespace the certificate manager is deployed to
 deploymentNamespace: "default"
 
-# CLOUDFLARE
+## DNS PROVIDER CONFIGURATION
+## You can leave any of this you need to blank.
+##
+## CLOUDFLARE: The email of the cloudflare user
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 cloudflareEmail: ""
+
+## CLOUDFLARE: The API key corresponding to the email
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 cloudflareApiKey: ""
-#
-# DIGITAL OCEAN
+
+## DIGITAL OCEAN: The digital ocean authorization token
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 doAuthToken: ""
-#
-# DNSIMPlE
+
+## DNSIMPLE: The email fo the DNSimple user
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 dnsimpleEmail: ""
+
+## DNSIMPLE: The API key corresponding to the email
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 dnsimpleApiKey: ""
-#
-# DNS MADE EASY
+
+## DNS MADE EASY: The API key for DNS Made Easy
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 dnsmadeeasyApiKey: ""
+
+## DNS MADE EASY: The api secret corresponding with the API key
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 dnsmadeeasyApiSecret: ""
+
+## DNS MADE EASY: A boolean flag, if set to true or 1, requests will be sent to the sandbox API
+## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 dnsmadeeasySandbox: ""
-#
-# DYN
+
+## DYN:
 dynCustomerName: ""
 dynUserName: ""
 dynPassword: ""
