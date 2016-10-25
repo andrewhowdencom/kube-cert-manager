@@ -27,142 +27,142 @@ spec:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email
-           - name: CLOUDFLARE_EMAIL
-             valueFrom:
-               secretKeyRef:
-                 name: kube-cert-manager-environment
-                 key: cloudflare.email 
-         args:
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email
+          - name: CLOUDFLARE_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: kube-cert-manager-environment
+                key: cloudflare.email 
+          args:
             - "-data-dir=/var/lib/cert-manager"
             - "-acme-url={{ .Values.acmeUrl }}"
           volumeMounts:
