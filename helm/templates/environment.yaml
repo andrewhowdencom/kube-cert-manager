@@ -8,55 +8,55 @@ data:
   # For reference, see https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
   # 
   # CLOUDFLARE
-  cloudflare.email: ""
-  cloudflare.api.key: ""
+  cloudflare.email: "{{ .Values.cloudflareEmail | b64enc }}"
+  cloudflare.api.key: "{{ .Values.cloudflareApiKey | b64enc }}"
   # 
   # DIGITAL OCEAN
-  do.auth.token: ""
+  do.auth.token: "{{ .Values.doAuthToken | b64enc }}"
   #
   # DNSIMPlE
-  dnsimple.email: ""
-  dnsimple.api.key: ""
+  dnsimple.email: "{{ .Values.dnsimpleEmail | b64enc }}"
+  dnsimple.api.key: "{{ .Values.dnsimpleApiKey | b64enc }}"
   #
   # DNS MADE EASY
-  dnsmadeeasy.api.key: ""
-  dnsmadeeasy.api.secret: ""
-  dnsmadeeasy.sandbox: ""
+  dnsmadeeasy.api.key: "{{ .Values.dnsmadeeasyApiKey | b64enc }}"
+  dnsmadeeasy.api.secret: "{{ .Values.dnsmadeeasyApiSecret | b64enc }}"
+  dnsmadeeasy.sandbox: "{{ .Values.dnsmadeeasySandbox | b64enc }}"
   #
   # DYN 
-  dyn.customer.name: ""
-  dyn.user.name: ""
-  dyn.password: ""
+  dyn.customer.name: "{{ .Values.dynCustomerName | b64enc }}"
+  dyn.user.name: "{{ .Values.dynUserName | b64enc }}"
+  dyn.password: "{{ .Values.dynPassword | b64enc }}"
   #
   # GANDI
-  gandi.api.key: ""
+  gandi.api.key: "{{ .Values.gandiApiKey | b64enc }}"
   #
   # GOOGLE CLOUD
-  gce.cloud: ""
-  google.application.credentials: ""
+  gce.project: "{{ .Values.gceProject | b64enc }}"
+  google.application.credentials: "{{ .Values.googleApplicationCredentials | b64enc }}"
   #
   # NAMECHEAP
-  namecheap.api.user: ""
-  namecheap.api.key: ""
+  namecheap.api.user: "{{ .Values.namecheapApiUser | b64enc }}"
+  namecheap.api.key: "{{ .Values.namecheapApiKey | b64enc }}"
   # 
   # OVH
-  ovh.endpoint: ""
-  ovh.application.key: ""
-  ovh.application.secret: ""
-  ovh.consumer.key: ""
+  ovh.endpoint: "{{ .Values.ovhEndpoint | b64enc }}"
+  ovh.application.key: "{{ .Values.ovhApplicationKey | b64enc }}"
+  ovh.application.secret: "{{ .Values.ovhApplicationSecret | b64enc }}"
+  ovh.consumer.key: "{{ .Values.ovhConsumerKey | b64enc }}"
   # 
   # PDNS
-  pdns.api.key: ""
+  pdns.api.key: "{{ .Values.pdnsApiKey | b64enc }}"
   #
   # RFC2136
-  rfc2136.nameserver: ""
-  rfc2136.tsig.algorithm: ""
-  rfc2136.tsig.key: ""
-  rfc2136.tsig.secret: ""
+  rfc2136.nameserver: "{{ .Values.rfc2136Nameserver | b64enc }}"
+  rfc2136.tsig.algorithm: "{{ .Values.rfc2136TsigAlgorithm | b64enc }}"
+  rfc2136.tsig.key: "{{ .Values.rfc2136TsigKey | b64enc }}"
+  rfc2136.tsig.secret: "{{ .Values.rfc2136TsigSecret | b64enc }}"
   #
   # AMAZON ROUTE 53
-  aws.access.key.id: ""
-  aws.secret.access.key: ""
+  aws.access.key.id: "{{ .Values.awsAccessKey | b64enc }}"
+  aws.secret.access.key: "{{ .Values.awsSecretAccessKey | b64enc }}"
   # 
   # VULTR
-  vultr.api.key: ""
+  vultr.api.key: "{{ .Values.vultrApiKey | b64enc }}"
