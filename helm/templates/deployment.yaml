@@ -22,16 +22,16 @@ spec:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: cloudflare.email
-          - name: CLOUDFLARE_EMAIL
+          - name: CLOUDFLARE_API_KEY
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: cloudflare.email
-          - name: CLOUDFLARE_EMAIL
+                key: cloudflare.api.key
+          - name: DO_AUTH_TOKEN
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: cloudflare.email
+                key: do.auth.token
           - name: CLOUDFLARE_EMAIL
             valueFrom:
               secretKeyRef:
