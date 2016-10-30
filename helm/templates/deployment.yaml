@@ -42,126 +42,121 @@ spec:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: dnsimple.api.key
-          - name: __TODO
+          - name: 
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: DNSMADEEASY_API_SECRET
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: DNSMADEEASY_SANDBOX
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: DYN_CUSTOMER_NAME
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: DYN_USER_NAME
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: DYN_PASSWORD
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: GANDI_API_KEY
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: GCE_PROJECT
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: GOOGLE_APPLICATION_CREDENTIALS
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: NAMECHEAP_API_USER
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: NAMECHEAP_API_KEY
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: OVH_ENDPOINT
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: OVH_APPLICATION_KEY
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: OVH_APPLICATION_SECRET
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: OVH_CONSUMER_KEY
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: PDNS_API_KEY
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: RFC2136_NAMESERVER
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: RFC2136_TSIG_ALGORITHM
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: RFC2136_TSIG_KEY
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: RFC2136_TSIG_SECRET
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: AWS_ACCESS_KEY_ID
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: AWS_SECRET_ACCESS_KEY
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
+          - name: VULTR_API_KEY
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: __todo
-          - name: __TODO
-            valueFrom:
-              secretKeyRef:
-                name: kube-cert-manager-environment
-                key: __todo 
           args:
             - "-data-dir=/var/lib/cert-manager"
             - "-acme-url={{ .Values.acmeUrl }}"
