@@ -42,121 +42,118 @@ spec:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: dnsimple.api.key
-          - name: 
-            valueFrom:
-              secretKeyRef:
-                name: kube-cert-manager-environment
-                key: __todo
           - name: DNSMADEEASY_API_SECRET
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: dnsmadeeasy.api.secret
           - name: DNSMADEEASY_SANDBOX
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: dnsmadeeasy.api.sandbox
           - name: DYN_CUSTOMER_NAME
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: dyn.customer.name
           - name: DYN_USER_NAME
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: dyn.user.name
           - name: DYN_PASSWORD
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: dyn.password
           - name: GANDI_API_KEY
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: gandi.api.key
           - name: GCE_PROJECT
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: gce.project
+          # Todo: This should be a static path that's mounted into the container. Then, we can just mount an empty
+          # JSON file there, unless the user overrides it with content.
           - name: GOOGLE_APPLICATION_CREDENTIALS
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: google.application.credentials
           - name: NAMECHEAP_API_USER
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: namecheap.api.user
           - name: NAMECHEAP_API_KEY
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: namecheap.api.key
           - name: OVH_ENDPOINT
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: ovh.endpoint
           - name: OVH_APPLICATION_KEY
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: ovh.application.key
           - name: OVH_APPLICATION_SECRET
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: ovh.application.secret
           - name: OVH_CONSUMER_KEY
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: ovh.consumer.key
           - name: PDNS_API_KEY
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: pdns.api.key
           - name: RFC2136_NAMESERVER
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: rfc2136.nameserver
           - name: RFC2136_TSIG_ALGORITHM
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: rfc2136.tsig.algorithm
           - name: RFC2136_TSIG_KEY
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: rfc2136.tsig.key
           - name: RFC2136_TSIG_SECRET
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: rfc2136.tsig.secret
           - name: AWS_ACCESS_KEY_ID
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: aws.access.key.id
           - name: AWS_SECRET_ACCESS_KEY
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: aws.secret.access.key
           - name: VULTR_API_KEY
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: __todo
+                key: vultr.api.key
           args:
             - "-data-dir=/var/lib/cert-manager"
             - "-acme-url={{ .Values.acmeUrl }}"
