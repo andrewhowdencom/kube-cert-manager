@@ -2,7 +2,7 @@
 apiVersion: "v1"
 kind: "Secret"
 metadata:
-  name: "environment"
+  name: "kube-cert-manager-environment"
   namespace: "{{ .Values.deploymentNamespace }}"
 data:
   # For reference, see https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
