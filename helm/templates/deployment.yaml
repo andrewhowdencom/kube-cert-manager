@@ -78,7 +78,7 @@ spec:
                 name: kube-cert-manager-environment
                 key: gce.project
           - name: GOOGLE_APPLICATION_CREDENTIALS
-            value: /opt/gcloud/credentials.json
+            value: /etc/gcloud/credentials.json
           - name: NAMECHEAP_API_USER
             valueFrom:
               secretKeyRef:
