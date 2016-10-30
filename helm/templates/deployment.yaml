@@ -51,7 +51,7 @@ spec:
             valueFrom:
               secretKeyRef:
                 name: kube-cert-manager-environment
-                key: dnsmadeeasy.api.sandbox
+                key: dnsmadeeasy.sandbox
           - name: DYN_CUSTOMER_NAME
             valueFrom:
               secretKeyRef:
