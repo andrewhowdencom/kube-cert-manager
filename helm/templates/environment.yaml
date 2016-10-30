@@ -33,7 +33,6 @@ data:
   #
   # GOOGLE CLOUD
   gce.project: "{{ .Values.gceProject | b64enc }}"
-  google.application.credentials: "{{ .Values.googleApplicationCredentials | b64enc }}"
   #
   # NAMECHEAP
   namecheap.api.user: "{{ .Values.namecheapApiUser | b64enc }}"

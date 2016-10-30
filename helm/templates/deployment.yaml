@@ -77,13 +77,8 @@ spec:
               secretKeyRef:
                 name: kube-cert-manager-environment
                 key: gce.project
-          # Todo: This should be a static path that's mounted into the container. Then, we can just mount an empty
-          # JSON file there, unless the user overrides it with content.
           - name: GOOGLE_APPLICATION_CREDENTIALS
-            valueFrom:
-              secretKeyRef:
-                name: kube-cert-manager-environment
-                key: google.application.credentials
+            value: /opt/gcloud/credentials.json
           - name: NAMECHEAP_API_USER
             valueFrom:
               secretKeyRef:
@@ -160,13 +155,18 @@ spec:
           volumeMounts:
             - name: data
               mountPath: /var/lib/cert-manager
+            - name: google-cloud
+              mountPath: /etc/gcloud
         - name: kubectl-proxy
           image: palmstonegames/kubectl-proxy:{{ .Values.kubectlVersion }}
       volumes:
-        - name: "data"
+        - name: data
           gcePersistentDisk:
             pdName: kube-cert-manager
             fsType: ext4
+        - name: google-cloud
+          secret:
+            secretName: google-cloud
       ports:
         - name: http
           containerPort: 80

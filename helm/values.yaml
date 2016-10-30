@@ -65,9 +65,10 @@ gandiApiKey: ""
 ## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 gceProject: ""
 
-## GOOGLE CLOUD: A path to the credentials file to use. The credentials file itself should be mounted from a seperate secret to a file.
+## GOOGLE CLOUD: The contents of the Google Cloud credentials file
+## Default: "{}"
 ## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
-googleApplicationCredentials: ""
+# googleApplicationCredentials:
 
 ## NAMECHEAP: The username of the namecheap user
 ## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
