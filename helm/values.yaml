@@ -65,8 +65,8 @@ gandiApiKey: ""
 ## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 gceProject: ""
 
-## GOOGLE CLOUD: The contents of the Google Cloud credentials file
-## Default: "{}"
+## GOOGLE CLOUD: The base64 contents of the Google Cloud credentials file
+## Default: "e30K" ({})
 ## ref: https://github.com/PalmStoneGames/kube-cert-manager/blob/master/docs/providers.md
 # googleApplicationCredentials:
 

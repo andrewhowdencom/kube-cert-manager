@@ -5,4 +5,4 @@ metadata:
   name: "google-cloud"
   namespace: {{ default "default" .Values.namespace | quote }}
 data:
-  credentials.json: {{ default "{}" .Values.googleApplicationCredentials | b64enc | quote }}
+  credentials.json: {{ default "e30K" .Values.googleApplicationCredentials | quote }}
