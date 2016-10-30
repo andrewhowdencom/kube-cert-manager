@@ -4,6 +4,37 @@ This guide will walk you through deploying the Kubernetes Certificate Manager.
 
 By default `kube-cert-manager` obtains certificates from the Let's Encrypt staging environment. Set the `-amce-url` flag to `https://acme-v01.api.letsencrypt.org/directory` for production.
 
+## Deploying with Helm
+
+Helm is the recently rebuilt Kubernetes package manager. Read more about helm at the URL below:
+
+- https://github.com/kubernetes/helm
+
+You can install this package via helm as follows:
+
+```
+$ # Clone the repository
+$ git clone https://github.com/PalmStoneGames/kube-cert-manager.git /path/to/checkout
+
+$ # Navigate to the checked out repositoroy
+$ cd /path/to/checkout
+
+$ # Install the package
+$ helm install --name=k8s-crt-mgr helm/
+```
+
+Note: This will configure helm targeting the staging lets encrypt endpoint and no DNS providers will be configured. You can change the values by using the `--set` flag of the `helm` CLI too. To check which values can be configured, run
+
+```
+$ helm inspect helm/
+```
+
+An example of how to configure the AWS Route53 DNS provider against the production lets encrypt endpoint:
+
+```
+$ helm install --name=k8s-crt-mgr --set='acmeUrl=https://acme-v01.api.letsencrypt.org/directory,awsAccessKey=YOURACCESSKEYID,awsSecretKey=YOURSECRETKEY' helm/
+```
+
 ## High Level Tasks
 
 * Create the Certificate Third Party Resource
